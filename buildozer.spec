@@ -4,7 +4,7 @@ package.name = thevault
 package.domain = com.schmitty
 source.dir = .
 source.include_exts = py,png,jpg,jpeg,json,kv,atlas,wav,mp3,ogg,ttf
-version = 0.1.0
+version = 0.5.1
 requirements = python3,kivy==2.3.1
 orientation = landscape
 fullscreen = 1

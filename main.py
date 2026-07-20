@@ -52,10 +52,7 @@ NES_CORE_PATH = (
     "nestopia_libretro_android.so"
 )
 
-NES_ROM_PATH = (
-    "/storage/emulated/0/RetroArch/downloads/"
-    "mario_duck_hunt.nes"
-)
+NES_ROM_FOLDER = "/storage/emulated/0/RetroArch/downloads/"
 
 
 @dataclass(frozen=True)
@@ -84,17 +81,32 @@ SYSTEMS = (
             ),
         ),
     ),
-    SystemInfo(
-        "snes",
-        "SNES",
-        (
-            GameInfo(
-                "SNES CONNECTION COMES NEXT",
-                "",
-                "",
-            ),
+SystemInfo(
+    "nes",
+    "NES",
+    (
+        GameInfo(
+            "Contra",
+            f"{NES_ROM_FOLDER}/Contra.nes",
+            NES_CORE_PATH,
+        ),
+        GameInfo(
+            "Super Mario Bros. + Duck Hunt",
+            f"{NES_ROM_FOLDER}/mario_duck_hunt.nes",
+            NES_CORE_PATH,
+        ),
+        GameInfo(
+            "Mega Man",
+            f"{NES_ROM_FOLDER}/Mega Man.nes",
+            NES_CORE_PATH,
+        ),
+        GameInfo(
+            "Super Mario Bros.",
+            f"{NES_ROM_FOLDER}/Super Mario Bros.nes",
+            NES_CORE_PATH,
         ),
     ),
+),
     SystemInfo(
         "genesis",
         "GENESIS",
